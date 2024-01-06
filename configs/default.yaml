@@ -1,0 +1,23 @@
+---
+img_size:
+- 1080
+- 1920
+in_chans: 3
+patch_size: 128
+embed_dim: 768
+depth: 12
+num_heads: 12
+qkv_bias: true
+mlp_ratio: 4
+drop_rate: 0
+bb1_db_depth: 1
+loss_alpha: 0.4
+lr: 0.0001
+decay_step: 2
+decay_rate: 0.75
+fe: mislnet
+fe_config:
+    patch_size: 128
+    num_classes: 33
+fe_ckpt: 
+fe_freeze: false

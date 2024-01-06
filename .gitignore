@@ -1,0 +1,31 @@
+# Ignore Python stuff
+*.pyc
+*__pycache__*
+
+.venv/
+bin/
+lib/
+include/
+share/
+etc/
+output/
+
+data/
+.configs/
+
+*scratch*
+*temp* !templates/
+*tmp*
+*log_dump*
+
+*.pth
+*.pt
+*.bak
+*.ckpt
+*.dat
+*.zip
+
+zip.sh
+
+weights/*
+!weights/put_weights_here.txt
