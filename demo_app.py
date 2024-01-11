@@ -419,4 +419,4 @@ with gr.Blocks(title=app_name, css=css) as demo:
     )
 
 if __name__ == "__main__":
-    demo.queue().launch(share=False, show_error=True)
+    demo.queue(max_size=10).launch(max_threads=64, share=True, show_error=True)
